@@ -23,9 +23,9 @@ A graph is a set of *vertices* and a collection of *edges* that each connect a p
 * A bipartite graph is a graph whose vertices we can divide into two sets such that all edges connect a vertex in one set with a vertex in the other set. 
 
 <p align="center">
-<img width="50%" height="50%" src="./pict/graph-anatomy.png" />
-<img width="50%" height="50%" src="./pict/tree.png" />
-<img width="50%" height="50%" src="./pict/forest.png" />
+<img width="30%" height="50%" src="./pict/graph-anatomy.png" />
+<img width="30%" height="50%" src="./pict/tree.png" />
+<img width="30%" height="50%" src="./pict/forest.png" />
 <br>
 
 ### Undirected graph data type. 
