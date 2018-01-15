@@ -23,9 +23,9 @@ A graph is a set of *vertices* and a collection of *edges* that each connect a p
 * A bipartite graph is a graph whose vertices we can divide into two sets such that all edges connect a vertex in one set with a vertex in the other set. 
 
 <p align="center">
-<img width="50%" src="./pict/graph-anatomy.png" />
-<img width="50%" src="./pict/tree.png" />
-<img width="50%" src="./pict/forest.png" />
+<img width="50%" height="50%" src="./pict/graph-anatomy.png" />
+<img width="50%" height="50%" src="./pict/tree.png" />
+<img width="50%" height="50%" src="./pict/forest.png" />
 <br>
 
 ### Undirected graph data type. 
@@ -48,7 +48,7 @@ we prepare the test data [tinyG.txt](https://algs4.cs.princeton.edu/41graph/tiny
 We use the adjacency-lists representation, where we maintain a vertex-indexed array of lists of the vertices connected by an edge to each vertex. 
 
 <p align="center">
-<img width="100%" src="./pict/adjacency-lists.png" />
+<img width="50%" height="50%" src="./pict/adjacency-lists.png" />
 <br>
 
 [Graph.java](https://algs4.cs.princeton.edu/41graph/Graph.java.html) implements the graph API using the adjacency-lists representation. [AdjMatrixGraph.java]() implements the same API using the adjacency-matrix representation. 
@@ -60,17 +60,17 @@ Depth-first search is a classic recursive method for systematically examining ea
 
 [DepthFirstSearch.java]() implements this approach and the following API:
 <p align="center">
-<img width="100%" src="./pict/search-api.png" />
+<img width="50%" height="50%" src="./pict/search-api.png" />
 <br>
 <p align="center">
-<img width="100%" src="./pict/02.jpg" />
+<img width="50%" src="./pict/02.jpg" />
 <br>
 
 ### Finding Paths
 It is easy to modify depth-first search to not only determine whether there exists a path between two given vertices but to find such a path
 (if one exists). we seek to implements the following API:
 <p align="center">
-<img width="100%" src="./pict/paths-api.png" />
+<img width="50%" src="./pict/paths-api.png" />
 <br>
 
 To accomplish this,we remember the edge v-w that takes us to each vertex w for the first time by setting edgeTo[w] to v.In other words,
@@ -94,7 +94,7 @@ put the source vertex on the queue,then perform the following steps until the qu
 For this task, we define the following API: 
 
 <p align="center">
-<img width="100%" src="./pict/cc-api.png" />
+<img width="50%" src="./pict/cc-api.png" />
 <br>
 
 ### Symbol graphs. 
@@ -107,19 +107,19 @@ To accommodate such applications, we define an input format with the following p
 
 The input file [routes.txt](https://algs4.cs.princeton.edu/41graph/routes.txt) is a small example. 
 <p align="center">
-<img width="100%" src="./pict/routes.png" />
+<img width="50%" src="./pict/routes.png" />
 <br>
 
 The input file [movies.txt](https://algs4.cs.princeton.edu/41graph/movies.txt) is a larger example from the Internet Movie Database. 
 This file consists of lines listing a movie name followed by a list of the performers in the movie. 
 <p align="center">
-<img width="100%" src="./pict/movies.png" />
+<img width="50%" src="./pict/movies.png" />
 <br>
 
 API. The following API allows us to use our graph-processing routines for such input files. 
 
 <p align="center">
-<img width="100%" src="./pict/symbol-graph-api.png" />
+<img width="50%" src="./pict/symbol-graph-api.png" />
 <br>
 
 Implementation. [SymbolGraph.java](https://algs4.cs.princeton.edu/41graph/SymbolGraph.java.html) implements the API. It builds three data structures:
@@ -132,5 +132,5 @@ Implementation. [SymbolGraph.java](https://algs4.cs.princeton.edu/41graph/Symbol
      
 
 <p align="center">
-<img width="100%" src="./pict/symbol-graph.png" />
+<img width="80%" src="./pict/symbol-graph.png" />
 <br>
